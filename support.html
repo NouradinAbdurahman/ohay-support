@@ -127,12 +127,33 @@
             border-radius: 8px;
             text-align: center;
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
         }
         
         .main-nav a {
             color: white;
             margin: 0 15px;
             font-weight: 600;
+        }
+        
+        .logo-container {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            max-width: 60px;
+            height: auto;
+            vertical-align: middle;
         }
         
         @media (max-width: 600px) {
@@ -151,14 +172,38 @@
             h2 {
                 font-size: 1.2rem;
             }
+            
+            .logo {
+                max-width: 50px;
+            }
+            
+            .main-nav {
+                flex-direction: column;
+                padding: 15px 10px;
+            }
+            
+            .logo-container {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            .nav-links {
+                justify-content: center;
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="main-nav">
-            <a href="index.html">Support Home</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
+            <div class="logo-container">
+                <img src="https://i.imgur.com/R7P9BbM.jpg" alt="Ohay Logo" class="logo">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Support Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
         </div>
         
         <h1>Ohay App Support</h1>
